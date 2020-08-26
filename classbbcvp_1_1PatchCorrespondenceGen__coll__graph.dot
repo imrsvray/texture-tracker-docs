@@ -1,0 +1,19 @@
+digraph G
+{
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="bbcvp::PatchCorrespondenceGen",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_PoseEst" ,fontname="FreeSans"];
+  Node2 [label="bbcvp::PoseEstPanTiltHead",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbbcvp_1_1PoseEstPanTiltHead.html",tooltip="Estimates pan/tilt/roll of a camera in a series of images, plus its fixed offset from a world object..."];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" id" ,fontname="FreeSans"];
+  Node3 [label="bbcvp::imageDetails",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbbcvp_1_1imageDetails.html",tooltip="This structure holds onto the image on which the features lie so it can be &#39;carried&#39; through the tree..."];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_KLTTracker" ,fontname="FreeSans"];
+  Node4 [label="bbcvp::KLTTracker",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbbcvp_1_1KLTTracker.html",tooltip="Class to implement 2D block shift estimation using the KLT."];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_linesToIgnore" ,fontname="FreeSans"];
+  Node5 [label="bbcvp::FittedLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbbcvp_1_1FittedLine.html",tooltip="Fits a straight line through a given set of points."];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_texturePatches" ,fontname="FreeSans"];
+  Node6 [label="bbcvp::TexturePatch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbbcvp_1_1TexturePatch.html",tooltip="Class to hold a multi-resolution texture patch, complete with the 3D world coordinates of its centre..."];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" rf" ,fontname="FreeSans"];
+  Node7 [label="bbcvp::randomForest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbbcvp_1_1randomForest.html",tooltip="This class is the forest containing all the decision trees."];
+}

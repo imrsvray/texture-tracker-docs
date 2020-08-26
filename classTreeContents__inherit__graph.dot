@@ -1,0 +1,10 @@
+digraph G
+{
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="TreeContents",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="TreeContentsProbs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTreeContentsProbs.html",tooltip="Probabilites for a the features to have reached this leaf node."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="TreeContentsRule",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTreeContentsRule.html",tooltip="Rule for an internal node on which path a feature should take."];
+}
